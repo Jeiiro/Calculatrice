@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculatrice</title>
 </head>
+
 <body>
     <div id="container">
         <h1>Calculatrice</h1>
@@ -14,7 +16,8 @@
             <div id="header">
                 <input type="text" name="screen" id="number" value="0" autocomplete="off" disabled>
             </div>
-                <div id="body">
+            <div id="body">
+                <div id="button" class="button_container">
                     <button class="button"> 7 </button>
                     <button class="button"> 8 </button>
                     <button class="button"> 9 </button>
@@ -25,15 +28,20 @@
                     <button class="button"> * </button>
                     <button class="button"> 1 </button>
                     <button class="button"> 2 </button>
-                    <button class="button"> 3</button>
+                    <button class="button"> 3 </button>
                     <button class="button"> - </button>
                     <button class="button"> 0 </button>
                     <button class="button"> . </button>
                     <button class="button"> = </button>
                     <button class="button"> + </button>
+                    <div id="clear">
+                        <button class="button"> C </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="fonction.js"></script>
 </body>
+
 </html>
