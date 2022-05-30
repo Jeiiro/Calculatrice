@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Calculatrice</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="container">
-        <h1>Calculatrice</h1>
-        <div id="calculatrice">
-            <div id="header">
-                <input type="text" name="screen" id="number" value="0" autocomplete="off" disabled>
-            </div>
-            <div id="body">
-                <div id="button" class="button_container">
-                    <button class="button"> 7 </button>
-                    <button class="button"> 8 </button>
-                    <button class="button"> 9 </button>
-                    <button class="button"> / </button>
-                    <button class="button"> 4 </button>
-                    <button class="button"> 5 </button>
-                    <button class="button"> 6 </button>
-                    <button class="button"> * </button>
-                    <button class="button"> 1 </button>
-                    <button class="button"> 2 </button>
-                    <button class="button"> 3 </button>
-                    <button class="button"> - </button>
-                    <button class="button"> 0 </button>
-                    <button class="button"> . </button>
-                    <button class="button"> = </button>
-                    <button class="button"> + </button>
-                    <div id="clear">
-                        <button class="button"> C </button>
-                    </div>
-                </div>
-            </div>
+      <h1>Calculatrice</h1>
+      <div id="calculatrice">
+        <div id="header">
+          <input
+            type="text"
+            name="screen"
+            id="number"
+            value="0"
+            autocomplete="off"
+            disabled
+          />
         </div>
+        <div id="body">
+          <div id="button" class="button_container">
+            <button value="7" class="button">7</button>
+            <button value="8" class="button">8</button>
+            <button value="9" class="button">9</button>
+            <button value="/" class="operator">/</button>
+            <button value="4" class="button">4</button>
+            <button value="5" class="button">5</button>
+            <button value="6" class="button">6</button>
+            <button value="*" class="operator">*</button>
+            <button value="1" class="button">1</button>
+            <button value="2" class="button">2</button>
+            <button value="3" class="button">3</button>
+            <button value="-" class="operator">-</button>
+            <button value="0" class="button">0</button>
+            <button value="." class="button">.</button>
+            <button id="resultat" value="=">=</button>
+            <button value="+" class="operator">+</button>
+            <div id="clear">
+              <button value="C" class="button_clear">C</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="fonction.js"></script>
-</body>
-
+  </body>
 </html>
