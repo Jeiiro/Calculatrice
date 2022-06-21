@@ -2,12 +2,6 @@ body {
   font-family: sans-serif;
 }
 
-#container {
-  font-size: 32px;
-  margin: 128px auto;
-  width: 800px;
-}
-
 h1 {
   text-align: center;
   color: #333;
@@ -15,35 +9,29 @@ h1 {
   margin-bottom: 32px;
 }
 
-#calculatrice,
-#number,
-.button {
-  border-radius: 6px;
-}
-
-#calculatrice {
+.calculatrice {
   margin: 0 auto;
   background-color: #454545;
   border: 1px solid #3d3d3d;
-  width: 240px;
+  width: 200px;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.8);
   padding-bottom: 10px;
-}
-
-#header {
+  font-size: 32px;
+  margin: 128px auto;
   padding: 10px;
   border-top: 1px solid #777;
   border-radius: 6px 6px 0 0;
 }
 
-input#number {
+.ecran {
   text-align: right;
   background-color: #121212;
   border: none;
   color: #c8c8c8;
   font-size: 20px;
   padding: 16px;
-  width: 185px;
+  padding-top: 30px;
+  width: 83%;
   border-bottom: 1px solid #777;
   box-shadow: inset 0 0 10px 4px rgba(207, 19, 19, 0.6);
 }
@@ -53,10 +41,14 @@ input#number {
   width: 240px;
 }
 
-.button_container {
-  width: 75%;
+.touches {
+  width: 100%;
+  margin-left: -8px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  padding-bottom: 0px;
 }
 
 .button {
@@ -84,4 +76,13 @@ input#number {
 
 .button:active {
   box-shadow: none;
+}
+.calculatrice,
+.ecran,
+.button {
+  border-radius: 6px;
+}
+
+button[data-key="13"] {
+  width: 90px;
 }
